@@ -7,8 +7,8 @@ sys.path.append(path)
 from fastapi import APIRouter
 from app.api_1.routes import api_router
 
-app = FastAPI(title="", openapi_url="")
-app.include_router(api_router, prefix="")
+app = FastAPI(title="Writing To Csv")
+app.include_router(api_router, prefix="api/v1/")
 
 
 
